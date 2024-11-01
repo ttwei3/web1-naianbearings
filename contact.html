@@ -1,0 +1,149 @@
+<!--------w-----------
+
+    Project 4
+    Name: Tingting Wei
+    Date: 2023-08-01
+    Description: Project 4 Website Development & Deployment
+
+
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" href="./images/page-logo.svg" type="image/x-icon">
+    <script src="formValidate.js"></script>
+</head>
+<body>
+    <header>
+        <div id="cornerimgs">
+            <img src="images/logo.svg" alt="Fail to load" id="logo">
+        </div>
+        <nav id="mainnav" aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a> 
+                    <a href="products.html">PRODUCTS</a>
+                    <a href="contact.html">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="settinglogo">
+            <a href="#"><img src="images/icon-user.svg" alt="Fail to load" id="log"></a>
+            <a href="#"><img src="images/icon-setting.svg" alt="Fail to load" id="language"></a>
+        </div>
+    </header>
+    <main>
+        <div id="contactpic">
+            <h1>CONTACT US</h1>
+        </div>
+        <div id="formmain">
+            <form id="contactform" action="http://twei.byethost13.com/index.html" method="post">
+                <fieldset>
+                    <legend>Client Information</legend>
+                    <ol>
+                        <li>
+                            <label for="type">Type of bearing</label>
+                            <input type="text" id="type" name="type">
+                            <p class="inputError error" id="type_error">* Required field</p>
+                        </li>
+                        <li>
+                            <label for="fname">First name</label>
+                            <input type="text" id="fname" name="fname" />
+                            <p class="inputError error" id="fname_error">* Required field</p>
+                        </li>
+                        <li>
+                            <label for="lname">Last name</label>
+                            <input type="text" id="lname" name="lname" />
+                            <p class="inputError error" id="lname_error">* Required field</p>
+                        </li>
+                        <li>
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" />
+                            <p class="inputError error" id="email_error">* Required field</p>
+                            <p class="inputError error" id="emailformat_error">* Invalid postal code</p>
+                        </li>
+                        <li>
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" />
+                            <p class="inputError error" id="address_error">* Required field</p>
+                        </li>
+                        <li>
+                            <label for="postal">Postal code</label>
+                            <input type="text" id="postal" name="postal">
+                            <p class="inputError error" id="postal_error">* Required field</p>
+                            <p class="inputError error" id="postalformat_error">* Invalid postal code</p>
+                        </li>
+                        <li><label for="phone">Phone number</label>
+                            <input type="tel" id="phone" name="phone" />
+                            <p class="inputError error" id="phone_error">* Required field</p>
+                            <p class="inputError error" id="phoneformat_error">* Invalid phone number</p>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Where did you know about us? (Optional)</legend>
+                    <ol id="checkbox">
+                        <li>
+                            <input type="checkbox" id="mags" name="Magazines" />
+                            <label for="mags">Advertisements</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="newspaper" name="Newspapers" />
+                            <label for="newspaper">Newspapers</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="blogs" name="Blogs" />
+                            <label for="blogs">Blogs</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="others" id="others" />
+                            <label for="others">Others</label>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Message (Optional)</legend>
+                    <ol>
+                        <li>
+                            <label for="message">Please type here</label>
+                            <textarea name="textarea" id="message" cols="30" rows="10" aria-label="Message"></textarea>
+                        </li>
+                    </ol>
+                </fieldset>
+				<section id="contactbutton">
+					<button type="reset">Reset</button>
+					<button type="submit">Submit</button>
+				</section>
+            </form>
+        </div>
+    </main>
+    <footer id="indexfooter">
+        <img src="images/footerlogo.jpg" alt="fail" id="footerlogo">
+        <div id="footerbox1">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                        <a href="products.html">PRODUCTS</a>
+                        <a href="contact.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="copyright">
+                <p id="footerp1">Copyright © 2006&nbsp;<a href="#"> Naian Bearing</a></p>
+                <p id="footerp2">Zhi Zao Town, Liaocheng, China<a href="#">Map</a></p>
+            </div>
+        </div>
+        <div id="indexsocial">
+            <a href="#"><img src="images/fb.jpg" alt="fail" id="fb" ></a>
+            <a href="#"><img src="images/tw.jpg" alt="fail" id="tw"></a>
+            <a href=""><img src="images/in.jpg" alt="fail" id="in"></a>
+        </div>
+    </footer>
+</body>
+</html>
